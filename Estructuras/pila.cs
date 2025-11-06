@@ -8,4 +8,6 @@ namespace PRestaurante.Estructuras
             Nodo<T> nuevo = new Nodo<T>(valor);
             nuevo.Siguiente = cima;
                 throw new InvalidOperationException("La pila está vacía");
+            if (cima == null)
+            return cima.Valor;
 }//1
