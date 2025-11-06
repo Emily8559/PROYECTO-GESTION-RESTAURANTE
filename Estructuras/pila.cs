@@ -10,4 +10,8 @@ namespace PRestaurante.Estructuras
                 throw new InvalidOperationException("La pila está vacía");
             if (cima == null)
             return cima.Valor;
+        public bool Estavacia()
+        {
+            return cima == null;
+        }
 }//1
