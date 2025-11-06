@@ -34,6 +34,7 @@ namespace PRestaurante.Estructuras
         }//6
 
         public T frente()
+        public T Frente()
         {
             if (frente == null)
                 throw new InvalidOperationException("La cola esta vacía");
