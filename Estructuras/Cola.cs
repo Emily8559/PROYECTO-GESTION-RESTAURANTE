@@ -6,7 +6,7 @@ namespace PRestaurante.Estructuras
         private Nodo<T>? final;
         public void Encolar(T valor)
         {//3
-            Nodo<T> nuevo = new Nodo<T>(valor);
+            Nodo<T> nuevo = new (valor);
             if (final == null)
             {//4
                 frente = nuevo;
