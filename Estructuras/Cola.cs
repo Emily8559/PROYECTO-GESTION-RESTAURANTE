@@ -2,8 +2,8 @@ namespace PRestaurante.Estructuras
 {//1
     public class Cola<T>
     {//2
-        private Nodo<T>? frente;
-        private Nodo<T>? final;
+        private Nodo<T> frente;
+        private Nodo<T> final;
         public void Encolar(T valor)
         {//3
             Nodo<T> nuevo = new (valor);
@@ -33,7 +33,6 @@ namespace PRestaurante.Estructuras
             return valor;
         }//6
 
-        public T frente()
         public T Frente()
         {
             if (frente == null)
@@ -41,7 +40,7 @@ namespace PRestaurante.Estructuras
             return frente.Valor;
         }
 
-        public bool Estavacia()
+        public bool EstaVacia()
         {
             return frente == null;
         }
