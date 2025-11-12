@@ -1,0 +1,1 @@
+    public decimal Subtotal
