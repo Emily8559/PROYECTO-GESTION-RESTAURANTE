@@ -19,3 +19,4 @@
             }
             menu.Insertar(new Plato(codigo, nombre, descripcion, precio));
             Console.WriteLine("Plato agregado al menú correctamente");
+        public void TomarPedido(string cedulacliente)
