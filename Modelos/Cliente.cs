@@ -12,7 +12,12 @@ namespace PRestaurante.Modelos
             Cedula = cedula;
             NombreCompleto = nombre;
             Celular = celular;
-            Email = email; 
+            Email = email;
+        }
+
+        public override string ToString()
+        {
+            return $"{NombreCompleto}(Cédula: {Cedula}, Celular: {Celular}, Email: {Email})";
         }
     }//2
 }//1

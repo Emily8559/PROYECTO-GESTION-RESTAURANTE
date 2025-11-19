@@ -3,7 +3,7 @@ namespace PRestaurante.Estructuras
     public class Nodo<T>
     {//2
         public T Valor { get; set; }
-        public Nodo<T>? Siguiente { get; set; }
+        public Nodo<T> Siguiente { get; set; }
         public Nodo(T valor)
         {//3
             Valor = valor;
@@ -13,7 +13,7 @@ namespace PRestaurante.Estructuras
     }//2
         public class Listaenlazada<T>
     {//4
-        private Nodo<T>? cabeza;
+        private Nodo<T> cabeza;
         public void Insertar(T valor)
         {//5
             Nodo<T> nuevo = new Nodo<T>(valor);
@@ -54,9 +54,9 @@ namespace PRestaurante.Estructuras
             return false;
         } // 7
 
-        public T? Buscar(Func<T, bool> condicion)
+        public T Buscar(Func<T, bool> condicion)
         {//8
-            Nodo<T>? actual = cabeza;
+            Nodo<T> actual = cabeza;
             while (actual != null)
             {//9
                 if (condicion(actual.Valor))
@@ -68,7 +68,7 @@ namespace PRestaurante.Estructuras
 
         public void Recorrer(Action<T> accion)
         {//9
-            Nodo<T>? actual = cabeza;
+            Nodo<T> actual = cabeza;
             while (actual != null)
             {//10
                 accion(actual.Valor);

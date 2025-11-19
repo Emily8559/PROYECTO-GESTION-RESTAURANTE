@@ -1,5 +1,9 @@
         private Listaenlazada<Pedido> pedidos = new Listaenlazada<Pedido>();
         private decimal gananciasDia = 0;
+            restaurantes.Recorrer (r =>
+            {
+                if (r.Nit == nit) existe = true;
+            });
         public void ListarClientes()
         {//6
             if (precio <= 0)
